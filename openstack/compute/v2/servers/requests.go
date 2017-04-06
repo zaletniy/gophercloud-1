@@ -50,6 +50,9 @@ type ListOpts struct {
 
 	// Bool to show all tenants
 	AllTenants bool `q:"all_tenants"`
+
+	//Tenant id for filter when AllTenants is enabled
+	TenantID string `q:"tenant_id"`
 }
 
 // ToServerListQuery formats a ListOpts into a query string.
